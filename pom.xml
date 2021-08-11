@@ -1110,9 +1110,6 @@
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
-      <modules>
-        <module>WaarpPackaging6</module>
-      </modules>
       <properties>
         <java.version>1.6</java.version>
         <maven.compiler.source>1.6</maven.compiler.source>
@@ -1266,7 +1263,6 @@
       <modules>
         <module>WaarpHttp</module>
         <module>WaarpR66-Extensions</module>
-        <module>WaarpPackaging</module>
       </modules>
       <properties>
         <java.version>1.8</java.version>
@@ -1456,7 +1452,6 @@
       <modules>
         <module>WaarpHttp</module>
         <module>WaarpR66-Extensions</module>
-        <module>WaarpPackaging</module>
       </modules>
       <properties>
         <java.version>1.11</java.version>
@@ -1618,7 +1613,33 @@
         </dependencies>
       </dependencyManagement>
     </profile>
-
+    <profile>
+      <id>packaging-jre6</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+        <module>WaarpPackaging6</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>packaging-jre8</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+        <module>WaarpPackaging</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>packaging-jre11</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+        <module>WaarpPackaging</module>
+      </modules>
+    </profile>
   </profiles>
 
   <reporting>
