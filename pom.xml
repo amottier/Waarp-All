@@ -315,7 +315,7 @@
     <findbugs.version>3.0.2</findbugs.version>
     <zjsonpatch.version>0.4.11</zjsonpatch.version>
     <selenium.version>3.141.59</selenium.version><!--Java6 shaded version -->
-    <htmlunit.version>2.51.0</htmlunit.version>
+    <htmlunit.version>2.52.0</htmlunit.version>
     <rest-assured.version>4.4.0</rest-assured.version>
     <mockito.version>3.11.2</mockito.version>
     <guava-test.version>30.1.1-jre</guava-test.version>
